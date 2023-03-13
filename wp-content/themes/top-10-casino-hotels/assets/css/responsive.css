@@ -1,0 +1,109 @@
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .banner-caption {
+        padding: 5rem 0rem;
+        width: 85%;
+    }
+    .about-hotel-text {
+        padding: 1rem 0;
+        padding-right: 0rem;
+    }
+    .why-choose-text {
+        padding-left: 0;
+    }
+    .why-choose-text ul li {
+        margin-top: 1rem;
+    }
+    .choose-heading h5 {
+        font-size: 1.25rem;
+        margin-bottom: 0.25rem;
+    }
+}
+@media only screen and (max-width: 991.9px) {
+    .about-hotel {
+        padding: 2rem 0;
+    }
+    .about-hotel-text {
+        padding: 1rem 1rem;
+        padding-right: 1rem;
+    }
+    .about-hotel-text .main-heading br{
+        display: none;
+    }
+    .about-hotel-image{
+        margin: 1.5rem 0;
+    }
+    .banner-caption {
+        padding: 2rem 0;
+        width: 100%;
+        text-align: center;
+    }
+    .banner-caption h1{
+        font-size: 2rem;
+    }
+    .hotels-list-wrap {
+        padding: 2rem 0;
+    }
+    .hotels-list ul li{
+        grid:
+        'logo logo progress'
+        'address address address'
+        'btns btns btns';
+    }
+    .circular-progress{
+        margin: auto;
+        width: 70px;
+        height: 70px;
+        padding: 0;
+        margin-top: 1rem;
+    }
+    .hotel-number,.hotel-rating{
+        display: none;
+    }
+    .hotel-logo img {
+        max-width: 166px;
+    }
+    .hotel-address{
+        border-top: 1px solid #E0E0E0;
+        border-bottom: 1px solid #E0E0E0;
+        padding: 0.5rem 0;
+        margin-top: 1rem;
+    }
+    .hotel-action-btn {
+        padding: 0.15rem 1rem;
+        padding-bottom: 1rem;
+    }
+    .hotel-action-btn .btn-success{
+        display: inline-block;
+    }
+    .hotel-action-btn .btn-link{
+        display: block;
+    }
+    .why-choose-us {
+        padding: 2rem 1rem;
+    }
+    .why-choose-text {
+        padding-left: 0;
+    }
+    .footer-links {
+        margin-top: 2rem;
+    }
+    .footer-links ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-links ul li{
+        margin: 0.5rem 0;
+    }
+    .footer-links ul li a {
+        padding: 0.25rem 0.5rem;
+        display: block;
+    }
+    .begambleaware-logo {
+        margin-bottom: 0;
+        margin-top: 1rem;
+    }
+    .copy-right p {
+        font-size: 0.8rem;
+    }
+
+}

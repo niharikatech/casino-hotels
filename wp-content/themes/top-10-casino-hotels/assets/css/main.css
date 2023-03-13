@@ -1,0 +1,500 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+body {
+  background: #fff;
+  width: 100%;
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.banner-home {
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+
+.banner-caption {
+  padding: 8rem 0rem;
+  width: 56%;
+}
+
+.banner-caption h1 {
+  font-weight: 700;
+  font-size: 3.375rem;
+  margin: 1rem 0;
+}
+
+.banner-caption p {
+  font-size: 1rem;
+}
+
+.banner-caption .btn {
+  margin-top: 1rem;
+}
+
+.banner-caption .btn .btn-arrow i {
+  position: relative;
+  top: 4px;
+  -webkit-animation: bouncedown 1600ms infinite cubic-bezier(0.445, 0.05, 0.55, 0.95);
+          animation: bouncedown 1600ms infinite cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+.btn-danger {
+  --bs-btn-bg: #FC115C;
+  --bs-btn-border-color: #FC115C;
+  --bs-btn-hover-bg: #db0549;
+  --bs-btn-hover-border-color: #db0549;
+  --bs-btn-active-bg: #db0549;
+  --bs-btn-active-border-color: #db0549;
+  --bs-btn-disabled-bg: #a88490;
+  --bs-btn-disabled-border-color: #a88490;
+  --bs-btn-border-radius: 2rem;
+  padding: 10px 8px;
+  padding-left: 1.5rem;
+  line-height: 30px;
+}
+
+.btn-danger .btn-arrow {
+  background: #fff;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  text-align: center;
+  color: #FC115C;
+  display: inline-block;
+  margin-left: 1rem;
+}
+
+.btn-success {
+  --bs-btn-bg: #27D04C;
+  --bs-btn-border-color: #27D04C;
+  --bs-btn-hover-bg: #05a829;
+  --bs-btn-hover-border-color: #05a829;
+  --bs-btn-active-bg: #05a829;
+  --bs-btn-active-border-color: #05a829;
+  --bs-btn-disabled-bg: #688879;
+  --bs-btn-disabled-border-color: #688879;
+  --bs-btn-border-radius: 2rem;
+  padding: 10px 8px;
+  padding-left: 1.5rem;
+  line-height: 30px;
+}
+
+.btn-success .btn-arrow {
+  background: #fff;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  text-align: center;
+  color: #27D04C;
+  display: inline-block;
+  margin-left: 1rem;
+}
+
+.about-hotel {
+  padding: 4rem 0;
+}
+
+.sub-heading {
+  color: #FC115C;
+  font-family: Poppins;
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 1rem 0;
+}
+
+.main-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #000;
+  margin: 1rem 0;
+}
+
+.about-hotel-image img {
+  max-width: 100%;
+}
+
+.about-hotel-text {
+  padding: 3rem 0;
+  padding-right: 12rem;
+}
+
+.about-hotel-text p {
+  color: #555555;
+}
+
+.about-hotel-text p strong {
+  font-weight: 600;
+  color: #555555;
+}
+
+.hotels-list-wrap {
+  background: #F1F1F1;
+  padding: 3rem 0;
+}
+
+.hotel-date-filter {
+  color: #FC115C;
+  font-weight: 500;
+  font-size: 0.8rem;
+}
+
+.top-rated-text {
+  background: #5C33FF;
+  color: #fff;
+  text-align: center;
+  border-radius: 20px 20px 0px 0px;
+  display: inline-block;
+  padding: 0.4rem 3rem;
+  margin-top: 1rem;
+}
+
+.hotels-list {
+  text-align: center;
+}
+
+.hotels-list ul li {
+  display: -ms-grid;
+  display: grid;
+  grid: 'number logo address rating progress btns';
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 6px;
+  -webkit-box-shadow: 2px 10px 54px 10px rgba(84, 121, 247, 0.14);
+          box-shadow: 2px 10px 54px 10px rgba(84, 121, 247, 0.14);
+  margin-bottom: 1rem;
+  -webkit-transition: all ease-in-out 0.2s;
+  transition: all ease-in-out 0.2s;
+}
+
+.hotels-list ul li:hover {
+  -webkit-box-shadow: 2px 10px 54px 10px rgba(18, 45, 136, 0.14);
+          box-shadow: 2px 10px 54px 10px rgba(18, 45, 136, 0.14);
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+}
+
+.hotels-list ul li:hover .hotel-number {
+  background: #e90c52;
+}
+
+.hotels-list ul li:hover .btn-arrow i {
+  position: relative;
+  left: 4px;
+}
+
+.hotel-number {
+  grid-area: number;
+  background: #FC115C;
+  color: #fff;
+  padding: 0.5rem;
+  font-weight: 700;
+  font-size: 1.65rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 6px;
+  width: 2rem;
+  height: 100%;
+}
+
+.hotel-logo {
+  grid-area: logo;
+}
+
+.hotel-logo img {
+  -webkit-transition: all ease-in-out 0.2s;
+  transition: all ease-in-out 0.2s;
+  max-width: 100%;
+}
+
+.hotel-address {
+  grid-area: address;
+}
+
+.hotel-address h5 {
+  color: #9C9C9C;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.hotel-address p {
+  color: #1F2937;
+  font-size: 0.875rem;
+  font-weight: 400;
+  margin: 0;
+}
+
+.hotel-rating {
+  grid-area: rating;
+}
+
+.hotel-rating p {
+  color: #9C9C9C;
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 0;
+}
+
+.circular-progress {
+  grid-area: progress;
+  width: 100px;
+  height: 100px;
+  padding: 1rem;
+  position: relative;
+}
+
+.circular-progress p {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  width: 40px;
+  height: 28px;
+  margin: auto;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+.circular-progress svg {
+  position: relative;
+  width: 76px;
+  height: 76px;
+}
+
+.circular-progress svg circle {
+  width: 76px;
+  height: 76px;
+  fill: none;
+  stroke-width: 8;
+  stroke: #000;
+  -webkit-transform: translate(5px, 5px);
+          transform: translate(5px, 5px);
+  stroke-dasharray: 194;
+  stroke-dashoffset: 0;
+}
+
+.circular-progress svg circle:nth-child(1) {
+  stroke-dashoffset: 0;
+  stroke: #fff;
+}
+
+.circular-progress svg circle:nth-child(2) {
+  stroke: #FC115C;
+  stroke-dashoffset: calc(200 - (200 * 50) / 100);
+}
+
+@-webkit-keyframes growProgressBar {
+  0%, 33% {
+    --pgPercentage: 0;
+  }
+  100% {
+    --pgPercentage: var(--value);
+  }
+}
+
+@keyframes growProgressBar {
+  0%, 33% {
+    --pgPercentage: 0;
+  }
+  100% {
+    --pgPercentage: var(--value);
+  }
+}
+
+@property --pgPercentage {
+  syntax: '<number>';
+  inherits: false;
+  initial-value: 0;
+}
+
+.progress[role="progressbar"] {
+  --size: 4.4rem;
+  --fg: #FC115C;
+  --bg: #fff;
+  --pgPercentage: var(--value);
+  -webkit-animation: growProgressBar 3s 1 forwards;
+          animation: growProgressBar 3s 1 forwards;
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  background: radial-gradient(closest-side, white 80%, transparent 0 99.9%, white 0), conic-gradient(var(--fg) calc(var(--pgPercentage) * 1%), var(--bg) 0);
+}
+
+.hotel-action-btn {
+  grid-area: btns;
+  padding: 2.25rem 1rem;
+}
+
+.hotel-action-btn .btn-success {
+  padding: 10px 2rem;
+  display: block;
+}
+
+.hotel-action-btn .btn-success .btn-arrow i {
+  position: relative;
+  left: 0;
+  -webkit-transition: all ease-in-out 0.2s;
+  transition: all ease-in-out 0.2s;
+}
+
+.hotel-action-btn .btn-link {
+  color: #000;
+  font-weight: 300;
+  margin-top: 4px;
+  display: inline-block;
+}
+
+@-webkit-keyframes bouncedown {
+  50% {
+    -webkit-transform: translateY(-8px);
+            transform: translateY(-8px);
+  }
+}
+
+@keyframes bouncedown {
+  50% {
+    -webkit-transform: translateY(-8px);
+            transform: translateY(-8px);
+  }
+}
+
+@-webkit-keyframes bounceright {
+  50% {
+    -webkit-transform: translateX(-8px);
+            transform: translateX(-8px);
+  }
+}
+
+@keyframes bounceright {
+  50% {
+    -webkit-transform: translateX(-8px);
+            transform: translateX(-8px);
+  }
+}
+
+.why-choose-us {
+  padding: 4rem 0;
+}
+
+.why-choose-image {
+  margin-top: 2rem;
+}
+
+.why-choose-image img {
+  max-width: 100%;
+}
+
+.why-choose-text {
+  padding-left: 10rem;
+}
+
+.why-choose-text ul li {
+  margin-top: 2.5rem;
+}
+
+.choose-num {
+  background: #FC115C;
+  color: #fff;
+  padding: 0 0.5rem;
+  font-weight: 700;
+  font-size: 1.65rem;
+  width: 5rem;
+  border-radius: 40px;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.choose-heading h5 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+}
+
+.choose-heading p {
+  color: #A7A7A7;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.footer-part {
+  background: #101010;
+  padding: 3rem 0;
+}
+
+.footer-logo {
+  text-align: center;
+}
+
+.footer-links {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #F3F4F6;
+}
+
+.footer-links ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer-links ul li {
+  margin: 0 1rem;
+}
+
+.footer-links ul li a {
+  color: #F3F4F6;
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 0.25rem 0.5rem;
+}
+
+.footer-links ul li a:hover {
+  color: #FC115C;
+}
+
+.begambleaware-logo {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.copy-right {
+  text-align: center;
+}
+
+.copy-right p {
+  margin: 0;
+  font-size: 0.875rem;
+  color: #939393;
+}
+/*# sourceMappingURL=main.css.map */

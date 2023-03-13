@@ -1,0 +1,39 @@
+<?php
+/**
+ * The template for displaying all single posts
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
+ *
+ * @package Top_10_Casino_Hotels
+ */
+
+get_header();
+?>
+<?php while ( have_posts() ) : the_post(); ?>
+<section>
+        <div class="about-hotel">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="about-hotel-text">
+                            <h4 class="sub-heading"><?php the_title();?></h4> 
+                            <div class="about-hotel-image d-lg-none d-md-block"> 
+                                <img class="lazy" data-src="<?php echo get_the_post_thumbnail_url();?>" alt=" Casino Hotel" />
+                            </div>
+                            <?php the_content();?> 
+                        </div>
+                    </div>
+					<?php if(has_post_thumbnail()) {?>
+                    <div class="col-lg-4">
+                        <div class="about-hotel-image d-none d-lg-block"> 
+                            <img class="lazy" data-src="<?php echo get_the_post_thumbnail_url();?>" alt="Casino Hotel" />
+                        </div>
+                    </div>
+					<?php } ?>
+                </div>
+            </div>
+        </div>
+    </section>
+<?php endwhile;?>
+<?php 
+get_footer();
