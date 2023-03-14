@@ -55,7 +55,8 @@ get_header();
                             <ul>
 							<?php $number =1;	
 								$hotel_lists = array(
-									'post_type' => 'casino_hotels',
+									'post_type' => 'casino_hotels', 'orderby'   => 'meta_value_num',
+	'meta_key'  => 'score',
 								  );
 								  $hotel_list = new WP_Query( $hotel_lists ); 
 								  while ( $hotel_list->have_posts() ) { $hotel_list->the_post();
@@ -154,29 +155,30 @@ get_header();
         </div>
     </section>
     <section>
+		<?php $pageId = 92; ?>
         <div class="why-choose-us">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 text-center">
-                        <h4 class="sub-heading"><?php echo get_field('why_choose_sub_heading')?></h4>
+                        <h4 class="sub-heading"><?php echo get_field('why_choose_sub_heading', $pageId)?></h4>
                         <h2 class="main-heading">
-                           <?php echo get_field('why_choose_heading')?>
+                           <?php echo get_field('title', $pageId)?>
                         </h2>
                         <div class="why-choose-image d-lg-none d-md-block">
                            <?php $why_image = get_field('left_image');?>
-                            <img class="lazy" data-src="<?php echo $why_image['url'];?>" alt="<?php echo $why_image['alt'];?>" />
+                            <img class="lazy" data-src="<?php echo get_the_post_thumbnail_url($pageId);?>" alt="<?php echo $why_image['alt'];?>" />
                         </div>
                     </div>
                     <div class="col-lg-4">
                         <div class="why-choose-image d-none d-lg-block"> 
-                            <img class="lazy" data-src="<?php echo $why_image['url'];?>" alt="<?php echo $why_image['alt'];?>" />
+                            <img class="lazy" data-src="<?php echo get_the_post_thumbnail_url($pageId);?>" alt="<?php echo $why_image['alt'];?>" />
                         </div>
                     </div>
                     <div class="col-lg-8">
                         <div class="why-choose-text">
                             <ul>
-								 <?php $index=1; while( have_rows('lists') ): the_row(); 
-									$image = get_sub_field('image');
+								 <?php $index=1; while( have_rows('lists', $pageId) ): the_row(); 
+									$image = get_sub_field('image', $pageId);
 									?>
                                 <li>
                                     <div class="choose-num"><?php echo $index;?></div>

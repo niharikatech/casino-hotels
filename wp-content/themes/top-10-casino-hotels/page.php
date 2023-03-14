@@ -19,20 +19,26 @@ get_header();
         <div class="about-hotel">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8">
+					<?php if(has_post_thumbnail()) {?>
+                   	 <div class="col-lg-8">
+					<?php } else { ?>
+						  <div class="col-lg-12">
+							  <?php } ?>
                         <div class="about-hotel-text">
-                            <h4 class="sub-heading"><?php title();;?></h4> 
+                            <h4 class="sub-heading"><?php the_title();?></h4> 
                             <div class="about-hotel-image d-lg-none d-md-block"> 
                                 <img class="lazy" data-src="<?php echo get_the_post_thumbnail_url();?>" alt=" Casino Hotel" />
                             </div>
                             <?php the_content();?> 
                         </div>
                     </div>
+					<?php if(has_post_thumbnail()) {?>
                     <div class="col-lg-4">
                         <div class="about-hotel-image d-none d-lg-block"> 
                             <img class="lazy" data-src="<?php echo get_the_post_thumbnail_url();?>" alt="Casino Hotel" />
                         </div>
                     </div>
+					<?php } ?>
                 </div>
             </div>
         </div>
